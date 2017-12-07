@@ -14,7 +14,7 @@ local msg = extra
 function run(msg, matches) 
   if msg.to.type == "user" and msg.text then
 fwd_msg("user#id"..tonumber(fwd_to), msg.id,ok_cb,false)
-  return 'دوست من دلیل کند بودن ربات درخواست های زیاده اگه ربات پاسختو نداد ربات رو بلاک نکن  تا ربات به نوبت پاسخ بده گاهی در ربات مطالب ارزشمند برای کاهش یا اضافه کردن وزن هم ارسال میشه'
+  return ' سلام دوست من من ازاین اکانت خارج شدم اما شاید برایت متنی نوشته باشم اگه میخوای متن رو بخونی یه بار بنویس مهسادرضمن پیام هات برام فوروارد میشه رفیق خوبم:)'
 elseif msg.text and msg.reply_id and tonumber(msg.to.id) == fwd_to then
     if not msg.text then
     return "You can only send Text message" 
